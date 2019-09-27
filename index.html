@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> School Design </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Upper">
+        <div class="header">
+            <div class="School"> ABC Educational Institutions </div>
+            <div class="logoutBar" id="logoutID" onclick="showhide(1)"> <button class="logout"> LOG-OUT</button></div>
+        </div>
+        <div class="showDetails" id="div0">
+            <button class="EightBoxes" onclick="showhide(2)">Personal Details </button>
+            <button class="EightBoxes" onclick="showhide(3)">Student Exam Results </button>
+
+            <button class="EightBoxes" onclick="showhide(4)"> Fee Details</button>
+
+            <button class="EightBoxes" onclick="showhide(5)">Student Daily Menu </button>
+            <button class="EightBoxes" onclick="showhide(6)">QR Code Reading </button>
+            <button class="EightBoxes" onclick="showhide(7)">Student Marks Menu </button>
+            <button class="EightBoxes" onclick="showhide(8)">FutureMenu </button>
+        </div>
+
+        <div class="MiddleContent" id="MiddleContentID">
+            <div class="myLoginForm" id="div1">
+                <h2>Login</h2>
+                <div>
+                    <input type="text" class="UsernameBar" class="Boxes" placeholder=" Please Enter your Username " />
+                </div>
+                <div>
+                    <input type="text" class="UsernameBar" class="Boxes" placeholder="Please Enter your password " />
+                </div>
+                <div class="actionButtons">
+                    <a href="javascript:void(0)" onclick="showhide(0)" class="SubBtn">Submit</a>
+                    <a href="javascript:void(0)" class="ResBtn">Reset</a>
+                </div>
+            </div>
+            <div class="personalDetails" id="div2">
+                <h2>Personal Details</h2>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> School Name </button> </a>
+                </div>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> School Address </button> </a>
+                </div>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> Renual Upto </button> </a>
+                </div>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> Contact to Third </button> </a>
+                </div>
+            </div>
+            <div class="studentExamResults" id="div3">
+                <h2>Student Exam Results</h2>
+
+                <div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Student Results Search </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Class-wise Results </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Results Chart </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Top 10 Students </button> </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="chart">
+                            <div>
+                                <input type="text" class="StdId" placeholder="Enter Student Id" />
+                                <input type="text" class="side" placeholder="001" />
+                            </div>
+                            <div> <a href="javascript:void(0)"> <button class="picsidebtn"> Submit</button> </a>
+                            </div>
+                            <table border="1" cellspacing="0" cellpadding="9">
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Name </td>
+                                    <td> Section </td>
+
+                                    <td> First.L </td>
+                                    <td> Second.L </td>
+                                    <td> English </td>
+                                    <td> Maths </td>
+                                    <td> Science </td>
+                                    <td> Social </td>
+                                    <td> Rank </td>
+                                </tr>
+                                <tr>
+                                    <td> 001</td>
+                                    <td> Manohar </td>
+                                    <td> 6th </td>
+                                    <td> 89 </td>
+                                    <td> 87 </td>
+                                    <td> 77 </td>
+                                    <td> 99 </td>
+                                    <td> 88 </td>
+                                    <td> 89 </td>
+                                    <td> 600 </td>
+                                </tr>
+                            </table>
+                            <a href="javascript:void(0)"> <button class="picsidebtn"> Ok </button> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="feeDetails" id="div4">
+                <h2>Fee Details</h2>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> Student-wise Fee Search </button> </a>
+                </div>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> Class-wise Results </button> </a>
+                </div>
+                <div class="firstOne">
+                    <a href="javascript:void(0)"> <button class="leftbtn"> Results Chart </button> </a>
+                </div>
+            </div>
+            <div class="studentDailyMenu" id="div5">
+                <h2>Student Daily Menu</h2>
+
+                <div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Class-wise Attendance add/update </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Attendance Report </button> </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="chart">
+                            <select class="SelectOptions">
+                                <option> Select Class </option>
+                                <option> First Class </option>
+                                <option> Second Class </option>
+                                <option> Third Class </option>
+                                <option> Fourth Class </option>
+                                <option> Fifth Class </option>
+                                <option> Sixth Class </option>
+                                <option> Seventh Class </option>
+                                <option> Eigth Class </option>
+                                <option> Nineth Class </option>
+                                <option> Tenth Class </option>
+                            </select>
+
+                            <div> <a href="javascript:void(0)"> <button class="picsidebtn"> Submit</button> </a> </div>
+
+
+                            <table border="1" cellspacing="0" cellpadding="9">
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Name </td>
+                                    <td> Class </td>
+                                    <td> Section </td>
+                                    <td colspan="2"> Status </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Name </td>
+                                    <td> Class </td>
+                                    <td> Section </td>
+                                    <td> <select>
+                                            <option>Absent Or present</option>
+                                            <option>Present</option>
+                                            <option>Absent</option>
+                                        </select>
+                                        <a href="javascript:void(0)"> <button>Update</button> </a> </td>
+
+                                </tr>
+
+
+                            </table>
+
+                            <a href="javascript:void(0)"> <button class="picsidebtn"> Ok </button> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qrcodescanning" id="div6">
+                <h2>QR Code Reading</h2>
+                <div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Name </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Address </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Renual Upto </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Contact to Third </button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="studentmarksmenu" id="div7">
+                <h2>Student Marks Menu</h2>
+                <div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Name </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Address </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Renual Upto </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Contact to Third </button> </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="chart">
+                            <select class="SelectOptions">
+                                <option> Select Class </option>
+                                <option> First Class </option>
+                                <option> Second Class </option>
+                                <option> Third Class </option>
+                                <option> Fourth Class </option>
+                                <option> Fifth Class </option>
+                                <option> Sixth Class </option>
+                                <option> Seventh Class </option>
+                                <option> Eigth Class </option>
+                                <option> Nineth Class </option>
+                                <option> Tenth Class </option>
+                            </select>
+
+                            <div> <a href="javascript:void(0)"> <button class="picsidebtn"> Submit</button> </a> </div>
+
+
+                            <table border="1" cellspacing="0" cellpadding="9">
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Name </td>
+                                    <td> Class </td>
+                                    <td> Section </td>
+                                    <td colspan="2"> Status </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td> ID </td>
+                                    <td> Name </td>
+                                    <td> Class </td>
+                                    <td> Section </td>
+                                    <td> <select>
+                                            <option>Absent Or present</option>
+                                            <option>Present</option>
+                                            <option>Absent</option>
+                                        </select>
+                                        <a href="javascript:void(0)"> <button>Update</button> </a> </td>
+
+                                </tr>
+
+
+                            </table>
+
+                            <a href="javascript:void(0)"> <button class="picsidebtn"> Ok </button> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="futureMenu" id="div8">
+                <h2>Future Menu</h2>
+
+                <div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Name </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> School Address </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Renual Upto </button> </a>
+                    </div>
+                    <div class="firstOne">
+                        <a href="javascript:void(0)"> <button class="leftbtn"> Contact to Third </button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="Address"> © 2019, ABC Educational Institutions, All Rights Reserved. </div>
+        </div>
+    </div>
+    <script src="htmlscript.js"></script>
+</body>
+
+</html>
